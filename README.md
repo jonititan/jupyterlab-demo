@@ -1,12 +1,9 @@
 # JupyterLab Demonstration
+This Repo is intended to make it easy to create interactive worked examples for [Project Rho](http://www.projectrho.com/public_html/rocket/index.php)
+[![Binder](https://beta.mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jonititan/projectrho-lab/master?urlpath=lab/tree/demo/Lorenz.ipynb)
 
-[![Build Status](https://travis-ci.org/jupyterlab/jupyterlab-demo.svg?branch=master)](https://travis-ci.org/jupyterlab/jupyterlab-demo)
+This repo borrows heavily from the reference demo for jupyterlab and could not exist without it.
 
-[![Binder](https://beta.mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/master?urlpath=lab/tree/demo/Lorenz.ipynb)
-
-This repository contains some demonstrations of
-[JupyterLab](https://github.com/jupyter/jupyterlab), the next
-generation user interface of Project Jupyter.
 
 ## Installation
 
@@ -27,7 +24,7 @@ To create the conda environment with all the dependencies and jupyterlab extensi
 invoke environment  # optionally --env-name=my-env-name
 ```
 
-The default environment name is `jupyterlab-demo`.
+The default environment name is `projectrho-lab`.
 
 To create the environment and remove previous installation, call:
 
@@ -40,27 +37,13 @@ invoke environment --clean
 To activate the conda environment, run:
 
 ```bash
-source activate jupyterlab-demo
+source activate projectrho-lab
 ```
 
 To deactivate the conda environment, run:
 
 ```bash
 source deactivate
-```
-
-### Additional demo files
-
-The demo includes files from a number of other repositories. To install these files,
-run:
-
-```bash
-invoke demofiles
-```
-
-To remove demofiles and download again all:
-```
-invoke demofiles --clean
 ```
 
 ### R Language support
@@ -86,19 +69,6 @@ invoke clean
 
 # Demo guide
 
-The basic outline of the JupyterLab demo is described in the file `jupyterlab.md`.
+The basic outline of the JupyterLab demo is described in the file `projectrholab.md`.
 
 
-# External Repositories
-
-Our `invoke demofiles` clones repos from other authors.  The details of these repos are as follows:
-
-| Name  | Author |License |
-|---|---|---|
-| PythonDataScienceHandbook/LICESNSE-CODE  | Jake Vanderplas  | [MIT](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/LICENSE-CODE)|
-| PythonDataScienceHandbook/LICESNSE-TEXT   |  Jake Vanderplas | [CC-BY-NC-ND-3.0](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/LICENSE-TEXT) |
-| altair   |  Jake Vanderplas | [BSD 3-clause](https://github.com/altair-viz/altair/blob/master/LICENSE) |
-| Urban-Data-Challenge   |  [Data Canvas](http://datacanvas.org/) | [CC-BY-NC-3.0](http://datacanvas.org/public-transportation/) |
-| QuantEcon.notebooks   |  QuantEcon | [BSD 3-clause "New" or "Revised" License](https://github.com/QuantEcon/QuantEcon.notebooks/blob/master/LICENSE) |
-| TCGA   |  Gross et. al. | None Listed | None Listed |
-| TensorFlow-Examples   |  Aymeric Damien | [MIT](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/LICENSE) |
